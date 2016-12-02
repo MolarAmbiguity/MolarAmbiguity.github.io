@@ -1,0 +1,112 @@
+p {
+  font-size: 2em;
+  color: black;
+  margin: 1px;
+  line-height: 90%;
+
+}
+
+body {
+  background: #EEE;
+  font-family: 'Sans';
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width:200px;
+}
+
+i {
+  font-size: 10em
+}
+#nav-bar {
+  right: 0px;
+  float: right;
+  position:fixed;
+  color:black;
+  z-index: 10;
+  background: yellow;
+  font-size: 2em;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+}
+
+.sash {
+    /*top: 2vw;*/
+    /*background: #773344;*/
+    height: auto;
+    /*transform: skewY(2deg);*/
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("pat.svg");
+    background-attachment: fixed;
+    /* get mouse cursor position and zoom on that point;
+    /*background-position:  right 0;*/
+    /*background-repeat: repeat;*/
+    background-size: 500px;
+
+    transition: background-size 2s ;
+}
+
+.sash:hover {
+    background-size: 400px;
+}
+
+.sash-text {
+  margin 1;
+  /*position: absolute;*/
+  padding-left: 25px;
+  top: 25px;
+  font-size: 10em;
+
+}
+
+.skew-texta {
+  top: 200px;
+  padding-left: 40px;
+  /*position: relative;*/
+  /*transform: skewY(-2deg);*/
+  font-size: 3em;
+
+}
+
+#about {
+  position: relative;
+  top: 2vw;
+}
+
+
+#flex_logos {
+  display: flex;
+  box-orient: horizontal;
+  flex-wrap: wrap;
+}
+
+#flex_logos > * {
+  margin: 15px;
+
+}
+
+#flex_logos i:nth-child(3n-2) {
+  color: #ffcc00;
+}
+
+#flex_logos i:nth-child(3n-1) {
+  color: #99cc33;
+}
+
+#flex_logos i:nth-child(3n) {
+  color: #ff9900;
+}
+#projects {
+  position: relative;
+  top: 20vw;
+}
+
+#contact {
+  position: relative;
+  top: 40vw;
+}
