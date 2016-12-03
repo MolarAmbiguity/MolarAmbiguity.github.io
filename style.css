@@ -3,14 +3,19 @@ p {
   color: black;
   margin: 1px;
   line-height: 90%;
-
 }
 
 body {
   background: #EEE;
-  font-family: 'Sans';
-  padding: 0px;
+  font-family: 'DejaVu Sans' 'Sans';
+  /*padding-left: 100px;*/
+  /*padding-right: 100px;*/
   margin: 0px;
+  /*background-image: url("pat.svg")*/
+  /*display: flex;*/
+  margin-left: 5%;
+  width: 90%;
+
 }
 
 img {
@@ -18,65 +23,55 @@ img {
 }
 
 i {
-  font-size: 10em
+  /*position: sticky;*/
+  font-size: 10em;
+  padding: 5px;
+  transition: all 2s;
 }
+
+
 #nav-bar {
   right: 0px;
-  float: right;
   position:fixed;
-  color:black;
+  /*color:black;*/
   z-index: 10;
-  background: yellow;
-  font-size: 2em;
+  /*background-color: black;*/
+  font-size: 1.5em;
+  top: 0;
   padding: 10px;
   border-bottom-left-radius: 20px;
 }
 
+#nav-bar img{
+  width: 100px;
+}
+
 .sash {
-    /*top: 2vw;*/
-    /*background: #773344;*/
     height: auto;
-    /*transform: skewY(2deg);*/
-    position: relative;
-    width: 100%;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 50px;
     background-image: url("pat.svg");
     background-attachment: fixed;
-    /* get mouse cursor position and zoom on that point;
-    /*background-position:  right 0;*/
-    /*background-repeat: repeat;*/
-    background-size: 500px;
-
-    transition: background-size 2s ;
-}
-
-.sash:hover {
     background-size: 400px;
+    border-radius: 25px;
+
+    margin-top: 25px;
 }
 
 .sash-text {
   margin 1;
-  /*position: absolute;*/
   padding-left: 25px;
-  top: 25px;
   font-size: 10em;
 
 }
 
-.skew-texta {
-  top: 200px;
+.sash-texta {
+  padding-top: 25px;
   padding-left: 40px;
-  /*position: relative;*/
-  /*transform: skewY(-2deg);*/
   font-size: 3em;
 
 }
 
-#about {
-  position: relative;
-  top: 2vw;
-}
 
 
 #flex_logos {
@@ -87,26 +82,44 @@ i {
 
 #flex_logos > * {
   margin: 15px;
-
 }
 
-#flex_logos i:nth-child(3n-2) {
+#flex_logos div{
+  /*padding: 20px;*/
+}
+
+/*#flex_logos div:hover {
+  padding: 10px;
+  border: 10px solid #2ab7ca64;
+}*/
+
+#flex_logos div p{
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 2px solid;
+}
+#flex_logos div:nth-child(3n-2) i {
   color: #ffcc00;
 }
 
-#flex_logos i:nth-child(3n-1) {
+#flex_logos div:nth-child(3n-1) i {
   color: #99cc33;
 }
 
-#flex_logos i:nth-child(3n) {
+#flex_logos div:nth-child(3n) i {
   color: #ff9900;
 }
-#projects {
-  position: relative;
-  top: 20vw;
+
+#about {
+  /*padding-left:40px;*/
 }
 
-#contact {
-  position: relative;
-  top: 40vw;
+#projects {
+  /*padding-left:40px;*/
+
+}
+
+#contact p{
+  /*padding-left:40px;*/
+
 }
