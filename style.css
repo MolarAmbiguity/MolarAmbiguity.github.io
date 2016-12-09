@@ -111,6 +111,7 @@ i {
   word-break: normal;
   /*width: 40%;*/
   font-size: 2em;
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -120,9 +121,10 @@ i {
   }
 
   .work img {
+    width: 100%;
   }
 
   .work {
-    display:block;
+    flex-flow: column;
   }
 }
